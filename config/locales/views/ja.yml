@@ -1,0 +1,31 @@
+ja:
+  helpers:
+    submit:
+      create: 登録
+      submit: 保存
+      update: 更新
+    label:
+      email: メールアドレス
+      password: パスワード
+  user_sessions:
+    new:
+      title: ログイン
+      login: ログイン
+      create_new_page: 新規登録ページへ
+  users:
+    new:
+      title: ユーザー登録
+      to_login_page: ログインページへ
+  header:
+    title: アプリの題名
+    list: 投稿一覧
+    post: 投稿する
+    my_page: マイページ
+    create_new: 新規作成
+    login: ログイン
+    logout: ログアウト
+  footer:
+    privacy_literacy: プライバシーリテラシー
+    terms_of_use: 利用規約
+    contact_form: お問い合わせフォーム
+    copyright: Copyright@ 2024 アプリタイトル名
