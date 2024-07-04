@@ -1,7 +1,7 @@
 <div class="container mx-auto px-4">
   <div class="flex justify-center mt-14">
     <div class="w-full max-w-lg">
-      <h1 class="text-2xl font-bold mb-10">ユーザー登録</h1>
+      <h1 class="text-2xl font-bold mb-10"><%= t('.title') %></h1>
       <%= form_with model: @user do |f| %>
         <div class="mb-10">
           <%= f.label :name, class: "block mb-3" %>
@@ -19,9 +19,9 @@
           <%= f.label :password_confirmation, class: "block mb-3" %>
           <%= f.password_field :password_confirmation, class: "input input-bordered w-full max-w-xs" %>
         </div>
-          <%= f.submit "登録", class: 'btn btn-neutral' %>
+          <%= f.submit class: 'btn btn-neutral' %>
         <div class="mt-10 mb-10">
-          <%= link_to 'ログインページへ', login_path %>
+          <%= link_to t('.to_login_page'), login_path %>
         </div>
       <% end %>
     </div>
