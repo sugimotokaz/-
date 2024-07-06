@@ -12,10 +12,18 @@ ja:
       title: ログイン
       login: ログイン
       create_new_page: 新規登録ページへ
+    create:
+      success: ログインしました
+      failure: ログインに失敗しました
+    destroy:
+      success: ログアウトしました
   users:
     new:
       title: ユーザー登録
       to_login_page: ログインページへ
+    create:
+      succcess: ユーザー登録が完了しました
+      failure: ユーザー登録に失敗しました
   header:
     title: アプリの題名
     list: 投稿一覧

@@ -17,6 +17,7 @@
       <%= render 'shared/before_login_header' %>
     <% end %>
     <main class="flex-grow bg-orange-100 p-4">
+      <%= render 'shared/flash_message' %>
       <%= yield %>
     </main>
     <%= render 'shared/footer' %>
