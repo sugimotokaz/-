@@ -22,7 +22,7 @@ ja:
       title: ユーザー登録
       to_login_page: ログインページへ
     create:
-      succcess: ユーザー登録が完了しました
+      success: ユーザー登録が完了しました
       failure: ユーザー登録に失敗しました
   header:
     title: アプリの題名

@@ -2,18 +2,19 @@ class PostsController < ApplicationController
   skip_before_action :require_login, only: %i[index]
   
   def index
-  end
-
-  def show
+    @posts = Post.includes(:user)
   end
 
   def new
   end
 
-  def edit
+  def create
   end
 
-  def create
+  def show
+  end
+
+  def edit
   end
 
   def update
