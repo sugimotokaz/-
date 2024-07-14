@@ -1,3 +1,35 @@
-<div>
-  
+<div class="w-5/6 mx-auto max-w-screen-xl m-6">
+  <div class="bg-orange-300 rounded-lg shadow-md">
+    <p class="p-2 leading-relaxed">
+      飲み会や罰ゲームで、一発ギャグを披露する機会に直面したことはありませんか？<br>
+      「苦手だし、恥ずかしいよ」「ギャグなんて持ってない」そんな人がたくさんいると思います。<br>
+      ここは、一発ギャグが集まる場所。みんなで共有して武器（ギャグ）を身につけましょう！<br>
+      ギャグを作れる人は披露する前にここで評価してもらいましょう！
+    </p>
+  <!-- 投稿ボタン -->
+  </div>
+  <div class="flex justify-center">
+    <%= link_to t('header.post'), "#", class: 'btn btn-neutral mt-4' %>
+  </div>
+  <!-- 検索フォーム -->
+  <form class="flex items-center space-x-2 bg-orange-300 mt-4 p-4 rounded-lg shadow-md">
+    <input type="text" placeholder="検索..." class="px-4 py-2 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+    <button type="submit" class='btn btn-neutral'>検索</button>
+  </form>
+  <div class="flex justify-center text-xl mt-12">
+    投稿一覧
+  </div>
+  <div class="flex flex-wrap">
+    <div class="w-full">
+      <div class="flex flex-wrap justify-center items-center h-64">
+        <% if @posts.present? %>
+          <%= render @posts %>
+        <% else %>
+          <div class="text-center">
+            掲示板がありません
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
 </div>
